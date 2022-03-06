@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import "./reset.css";
+@import "./common.css";
+body {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+header .logo_area {
+  width: 1130px;
+  margin: 0 auto;
+  height: 160px;
+  position: relative;
+}
+header .logo {
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -32px;
+}
+header .logo a {
+  display: block;
+  height: 100%;
+}
+header .search_area {
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 268px;
+  margin-top: -28px;
+}
+header .search_area .search_txt {
+  outline: 0;
+  border: 0;
+  width: 444px;
+  height: 52px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 13px 15px;
+  box-sizing: border-box;
+}
+header .search_area .search_btn {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  background: #19ce60;
+  border: 0;
+  padding: 0;
+}
+header .search_area .search_btn i {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  background-position: -420px 0;
+}
+header .quick_area {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+}
+header .quick_area a {
+  float: left;
+  font-size: 11px;
+}
+header .quick_area a.link_start::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -308px -345px;
+  margin: -3px 0 0 3px;
+}
+header .quick_area a.link_junior {
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  background-position: -262px -330px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px;
+}
+header .quick_area a.link_bin {
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  background-position: -369px -299px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 3px 2px;
+}
+header .quick_area .bar {
+  float: left;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+  margin: 3px 7px;
+}
+header .menu_area {
+  border-top: 1px solid #e4e8eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+header .menu_area .wrap {
+  width: 1130px;
+  margin: 0 auto;
+}
+header .menu_area .wrap::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+header .menu_area .gnb {
+  float: left;
+  color: #19ce60;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 52px;
+}
+header .menu_area .gnb li {
+  float: left;
+}
+header .menu_area .gnb li + li {
+  margin-left: 12px;
+}
+header .menu_area .gnb::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+header .menu_area .weather_area {
+  float: right;
+}
+
+main {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+main::after {
+  content: "";
+  /* 빈칸생성 */
+  display: block;
+  /* 빈칸이 인라인이라 블럭처리 */
+  clear: both;
+  /* 양쪽해제 */
+}
+
+footer {
+  background-color: #fafbfc;
+  border-top: 1px solid #e4e8eb;
+}/*# sourceMappingURL=layout.css.map */

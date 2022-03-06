@@ -1,0 +1,810 @@
+<!-- 개발자모드 잘쓰기
+    의미있는 클래스
+    구조적 마크업 
+    blind
+    img 태그를 쓰는 경우 {이미지 컨텐츠인경우 }vs 이미지태그를 안쓰는경우 {아이콘 로고 배경 background처럼 넣기}
+    - 단독아이콘 : 아이콘만 보고 설명가능?(o) blind(써야함)
+    - 쩌리아이콘 : 아이콘만 보고 설명가능?(x) 디자인요소 blind(안씀)
+
+    i, span:{
+        의미 제로 디자인요소, 단독으로 나왔을 경우
+    }
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo_area">
+        <h1 class="logo">
+          <a href=""><span class="blind">네이버</span></a>
+        </h1>
+        <div class="search_area">
+          <form action="">
+            <fieldset>
+              <legend class="blind">검색</legend>
+              <input type="text" class="search_txt" />
+              <button class="search_btn">
+                <i class="sp_bg"><span class="blind"> 검색</span></i>
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="quick_area">
+          <a href="" class="link_start">네이버를 시작페이지로</a
+          ><i class="bar"></i>
+          <a href="" class="link_junior"
+            ><span class="blind">쥬니어네이버</span></a
+          >
+          <a href="" class="link_bin"><span class="blind">해피빈</span></a>
+        </div>
+      </div>
+      <div class="menu_area">
+        <div class="wrap">
+          <ul class="gnb">
+            <li><a href="">메일</a></li>
+            <li><a href="">메일</a></li>
+            <li><a href="">메일</a></li>
+            <li><a href="">메일</a></li>
+            <li><a href="">메일</a></li>
+            <li><a href="">메일</a></li>
+          </ul>
+          <div class="weather_area">날씨영역</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="left_area">
+        <div class="banner">
+          <a href="">
+            <img src="./images/banner01.jpg" alt="" />
+          </a>
+        </div>
+        <section class="sc_news">
+          <h2 class="blind">큰영역을 포괄하는 제목이 나와야함</h2>
+          <div class="group_issue">
+            <div class="issue_area">
+              <a href="" class="media">연합뉴스</a>
+              <a href="" class="issue"
+                >[울진삼척 산불] 축구장 8천496개 면적 잿더미…158곳 재산피해</a
+              >
+            </div>
+            <div class="cate_area">
+              <a href="" class="home">뉴스홈</a><a href="">연예</a
+              ><a href="">스포츠</a><a href="">대선</a>
+            </div>
+          </div>
+          <div class="group_title">
+            <a href="" class="title">뉴스스탠드</a>
+            <div class="filter_area">
+              <a href="" class="on">구독한 언론사</a>
+              <a href="" class="all">전체 언론사</a>
+            </div>
+            <div class="set_area">
+              <a href=""
+                ><i class="sp_bg"><span class="blind">리스트형</span></i></a
+              >
+              <a href=""
+                ><i class="sp_bg"><span class="blind">썸네일형</span></i></a
+              >
+              <a href=""
+                ><i class="sp_bg"><span class="blind">뉴스설정</span></i></a
+              >
+            </div>
+          </div>
+          <div class="group_list">
+            <ul class="list">
+              <li>
+                <a href=""><img src="./images/news.png" alt="꼭써야함" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./images/news.png" alt="꼭써야함" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./images/news.png" alt="꼭써야함" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./images/news.png" alt="꼭써야함" /></a>
+              </li>
+            </ul>
+            <i class="vt_line vt01"></i><i class="vt_line vt02"></i
+            ><i class="vt_line vt03"></i><i class="vt_line vt04"></i
+            ><i class="vt_line vt05"></i> <i class="hr_line hr01"></i
+            ><i class="hr_line hr02"></i><i class="hr_line hr03"></i>
+          </div>
+        </section>
+        <section class="sc_themepost">
+          <h2 class="blind">주제별 포스팅</h2>
+          <div class="group_title">
+            <div class="title_area">
+              <strong class="title">오늘 읽을만한 글</strong>
+              <span class="dsc">주제별로 분리된 다양한 글 모음</span>
+            </div>
+            <div class="info_area">
+              <span class="info">
+                <strong>712</strong>
+                개의 글
+              </span>
+              <a href="">관심주제 설정</a>
+            </div>
+          </div>
+          <div class="group_cate">
+            <a href="" class="prev"
+              ><i><span class="blind">이전</span></i></a
+            >
+            <a href="" class="next"
+              ><i><span class="blind">다음</span></i></a
+            >
+            <div class="group_theme">
+              <ul>
+                <li>
+                  <a href="">엔터</a>
+                </li>
+                <li>
+                  <a href="">스포츠</a>
+                </li>
+                <li>
+                  <a href="">자동차</a>
+                </li>
+                <li>
+                  <a href="">웹툰</a>
+                </li>
+                <li>
+                  <a href="">경제M</a>
+                </li>
+                <li>
+                  <a href="">추천</a>
+                </li>
+                <li>
+                  <a href="">레시피</a>
+                </li>
+                <li>
+                  <a href="">리빙</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="group_list">
+            <div class="list list01">
+              <div class="content1">
+                <a href="" class="img">
+                  <img src="./images/recipe.jpg" alt="" />
+                </a>
+                <a href="" class="info">
+                  <em>[푸드클래스] 신효섭 셰프</em>
+                  <strong> 카페 부럽지 않은 홍합 스튜&프렌치 토스트 </strong>
+                  <span>
+                    감칠맛 가득한 토마토소스 스튜와<br />
+                    바게트의 조합으로 완벽한 브런치
+                  </span>
+                  <p>#브런치 #쉬운레시피</p>
+                </a>
+              </div>
+              <div class="content2">
+                <a href="" class="img">
+                  <img src="./images/recipe.jpg" alt="" />
+                </a>
+                <a href="" class="info">
+                  <em>[푸드클래스] 신효섭 셰프</em>
+                  <strong> 카페 부럽지 않은 홍합 스튜&프렌치 토스트 </strong>
+                  <span>
+                    감칠맛 가득한 토마토소스 스튜와<br />
+                    바게트의 조합으로 완벽한 브런치
+                  </span>
+                  <p>#브런치 #쉬운레시피</p>
+                </a>
+              </div>
+            </div>
+            <div class="list list02">
+              <ul>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/bread.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 편하게! 택배 되는 전국의 소문난 '빵집'</strong
+                    >
+                    <p>
+                      세상은 넓고 맛있는 빵은 정말 많다. 빵을 사랑하는 사람들이
+                      전국을 떠돌며 빵지 순례에 나서는 것은 어쩌면 당연한 일.
+                      하지만 시국이 시국이니만큼 집에서도 편하게 빵지 순례를
+                      즐길 수 있는 방법을 소개한다. 택배 되는 전국의 소문난
+                      ‘맛도리 빵집’을 모았다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">현대카드 포스트</span>
+                      <span class="date">4일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/bread.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 편하게! 택배 되는 전국의 소문난 '빵집'</strong
+                    >
+                    <p>
+                      세상은 넓고 맛있는 빵은 정말 많다. 빵을 사랑하는 사람들이
+                      전국을 떠돌며 빵지 순례에 나서는 것은 어쩌면 당연한 일.
+                      하지만 시국이 시국이니만큼 집에서도 편하게 빵지 순례를
+                      즐길 수 있는 방법을 소개한다. 택배 되는 전국의 소문난
+                      ‘맛도리 빵집’을 모았다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">현대카드 포스트</span>
+                      <span class="date">4일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/bread.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 편하게! 택배 되는 전국의 소문난 '빵집'</strong
+                    >
+                    <p>
+                      세상은 넓고 맛있는 빵은 정말 많다. 빵을 사랑하는 사람들이
+                      전국을 떠돌며 빵지 순례에 나서는 것은 어쩌면 당연한 일.
+                      하지만 시국이 시국이니만큼 집에서도 편하게 빵지 순례를
+                      즐길 수 있는 방법을 소개한다. 택배 되는 전국의 소문난
+                      ‘맛도리 빵집’을 모았다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">현대카드 포스트</span>
+                      <span class="date">4일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/bread.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 편하게! 택배 되는 전국의 소문난 '빵집'</strong
+                    >
+                    <p>
+                      세상은 넓고 맛있는 빵은 정말 많다. 빵을 사랑하는 사람들이
+                      전국을 떠돌며 빵지 순례에 나서는 것은 어쩌면 당연한 일.
+                      하지만 시국이 시국이니만큼 집에서도 편하게 빵지 순례를
+                      즐길 수 있는 방법을 소개한다. 택배 되는 전국의 소문난
+                      ‘맛도리 빵집’을 모았다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">현대카드 포스트</span>
+                      <span class="date">4일전</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="list list03">
+              <ul>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/recipe2.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 치킨 만들기 닭다리로 만든 치킨가라아게</strong
+                    >
+                    <p>
+                      아이가 제일 좋아하는 메뉴는 햄버거~ 두 번째로 좋아하는
+                      메뉴는 치킨이에요. 그래서 종종 시켜 먹기도 하고 집에서
+                      종종 만들어주곤 한답니다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">제시</span>
+                      <span class="date">2일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/recipe2.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 치킨 만들기 닭다리로 만든 치킨가라아게</strong
+                    >
+                    <p>
+                      아이가 제일 좋아하는 메뉴는 햄버거~ 두 번째로 좋아하는
+                      메뉴는 치킨이에요. 그래서 종종 시켜 먹기도 하고 집에서
+                      종종 만들어주곤 한답니다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">제시</span>
+                      <span class="date">2일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/recipe2.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 치킨 만들기 닭다리로 만든 치킨가라아게</strong
+                    >
+                    <p>
+                      아이가 제일 좋아하는 메뉴는 햄버거~ 두 번째로 좋아하는
+                      메뉴는 치킨이에요. 그래서 종종 시켜 먹기도 하고 집에서
+                      종종 만들어주곤 한답니다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">제시</span>
+                      <span class="date">2일전</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="img">
+                    <img src="./images/recipe2.jpg" alt="" />
+                  </a>
+                  <a href="" class="des">
+                    <em>레시피</em>
+                    <strong
+                      >집에서 치킨 만들기 닭다리로 만든 치킨가라아게</strong
+                    >
+                    <p>
+                      아이가 제일 좋아하는 메뉴는 햄버거~ 두 번째로 좋아하는
+                      메뉴는 치킨이에요. 그래서 종종 시켜 먹기도 하고 집에서
+                      종종 만들어주곤 한답니다.
+                    </p>
+                    <div class="source_box">
+                      <span class="source">제시</span>
+                      <span class="date">2일전</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="group_funding">
+            <a href="" class="title">마음을 채우는 클릭</a>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="./images/coffee.jpg" alt="" />
+                  <strong
+                    >싱그러운 포도향을 느낄수 있는 에티오피아 콜드브루</strong
+                  >
+                  <div class="source_box">
+                    <span class="source">히즈빈스</span>
+                    <span class="des">
+                      <em>800%</em>
+                      달성
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/coffee.jpg" alt="" />
+                  <strong
+                    >싱그러운 포도향을 느낄수 있는 에티오피아 콜드브루</strong
+                  >
+                  <div class="source_box">
+                    <span class="source">히즈빈스</span>
+                    <span class="des">
+                      <em>800%</em>
+                      달성
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/coffee.jpg" alt="" />
+                  <strong
+                    >싱그러운 포도향을 느낄수 있는 에티오피아 콜드브루</strong
+                  >
+                  <div class="source_box">
+                    <span class="source">히즈빈스</span>
+                    <span class="des">
+                      <em>800%</em>
+                      달성
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="group_more">
+            <div class="btn">
+              <i></i>
+              <span>새로운 글 더보기</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="right_area">
+        <section class="sc_login">
+          <h2 class="blind">로그인</h2>
+          <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+          <a href="" class="login_btn"
+            ><i class="sp_bg"><span class="blind">네이버</span></i
+            >로그인</a
+          >
+
+          <div class="login_link">
+            <a href="" class="link_id">아이디</a>
+            <a href="" class="link_find">비밀번호 찾기</a>
+            <a href="" class="link_join">회원가입</a>
+          </div>
+        </section>
+        <section class="sc_cardnews">
+          <h2 class="blind">카드뉴스</h2>
+          <a href="" class="link_wrap">
+            <span class="issue">이슈</span>
+            <span class="news">코로나 바이러스 감염</span>
+          </a>
+          <div class="navi">
+            <a href="" class="prev"><span class="blind">이전</span></a>
+            <a href="" class="next"><span class="blind">다음</span></a>
+          </div>
+        </section>
+        <div class="banner">
+          <a href="">
+            <img src="./images/banner02.jpg" alt="" />
+          </a>
+        </div>
+
+        <section class="sc_shopping">
+          <div class="group_title">
+            <h2>트렌드 쇼핑</h2>
+            <ul>
+              <li>
+                <a href="">상품</a>
+              </li>
+              <li>
+                <a href="">쇼핑몰</a>
+              </li>
+              <li>
+                <a href="">MEN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contents">
+            <div class="group_mall">
+              <div class="mall_list">
+                <a href="">G마켓</a>
+                <a href="">옥셧</a>
+                <a href="">11번가</a>
+                <a href="">이마트몰</a>
+                <a href="">티몬</a>
+              </div>
+              <div class="mall_list">
+                <a href="">신세계몰</a>
+                <a href="">위메프</a>
+                <a href="">올리브영</a>
+                <a href="">GS샵</a>
+                <a href="">롯데i몰</a>
+                <a href="">CJ온스타일</a>
+              </div>
+            </div>
+            <div class="group_goods">
+              <div class="goods_control">
+                <div class="num_box"><em class="current">1</em>/18</div>
+                <div class="navi_box">
+                  <a href="" class="prev"><span class="blind">이전</span></a>
+                  <a href="" class="next"><span class="blind">다음</span></a>
+                </div>
+              </div>
+              <ul class="goods_list">
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb_box">
+                      <img src="./images/goods.jpg" alt="" />
+                      <strong>프라이팬4종세트</strong>
+                      <span>49,000원 특가</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="goods_page">
+                <div class="navi1">
+                  <a href="" class="prev"></a>
+                  <span class="num"> <em class="current">1</em>/18</span>
+                  <a href="" class="next"></a>
+                </div>
+              </div>
+            </div>
+            <div class="group_news">
+              <div class="news_title">
+                <h2>반갑다! 쇼핑뉴스</h2>
+                <div class="news_control">
+                  <div class="num_box"><em class="current">1</em>/4</div>
+                  <div class="navi_box">
+                    <a href="" class="prev"><span class="blind">이전</span></a>
+                    <a href="" class="next"><span class="blind">다음</span></a>
+                  </div>
+                </div>
+              </div>
+              <ul class="news_list">
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <em class="title">지젤슈즈</em>
+                    <span class="dsc">맞춤 여성 수제화 전품목 50% 세일</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group_ad">
+              <div class="ad_title">
+                <div class="ad_cate">
+                  <a href="">패션</a>
+                  <a href="">라이프</a>
+                  <a href="">뷰티</a>
+                  <a href="">디지털레저</a>
+                </div>
+                <div class="ad_control">
+                  <div class="num_box"><em class="current">1</em>/9</div>
+                  <div class="navi_box">
+                    <a href="" class="prev"><span class="blind">이전</span></a>
+                    <a href="" class="next"><span class="blind">다음</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="ad_list">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="./images/ad.jpg" alt="" />
+                      <em>말해뭐해! BEST 인생청바지</em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./images/ad.jpg" alt="" />
+                      <em>말해뭐해! BEST 인생청바지</em>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <div class="banner_area">
+          <div class="data">
+            <div class="img_wrap">
+              <img src="./images/adbanner.png" alt="" />
+            </div>
+            <div class="content">
+              <em>D2SF 스타트업</em>
+              <strong>VR 게임 <더패치></strong>
+              <div>전략적 멀티플레이</div>
+              <div>액션 VR 게임의 등장</div>
+            </div>
+          </div>
+          <div class="data">
+            <div class="img_wrap">
+              <img src="./images/adbanner.png" alt="" />
+            </div>
+            <div class="content">
+              <em>D2SF 스타트업</em>
+              <strong>VR 게임 <더패치></strong>
+              <div>전략적 멀티플레이</div>
+              <div>액션 VR 게임의 등장</div>
+            </div>
+          </div>
+          <div class="data">
+            <div class="img_wrap">
+              <img src="./images/adbanner.png" alt="" />
+            </div>
+            <div class="content">
+              <em>D2SF 스타트업</em>
+              <strong>VR 게임 <더패치></strong>
+              <div>전략적 멀티플레이</div>
+              <div>액션 VR 게임의 등장</div>
+            </div>
+          </div>
+        </div>
+        <div class="notice_area">
+          <h2><a href="">공지사항</a></h2>
+          <a class="link_all"> 서비스 전체보기 </a>
+        </div>
+        <div class="service_area">
+          <div class="partner">
+            <div class="partner_box">
+              <div class="title">Creators</div>
+              <a href="">크리에이터</a>
+              <a href="">스몰비지니스</a>
+            </div>
+            <div class="partner_box">
+              <h3 class="title">Creators</h3>
+              <a href="">크리에이터</a>
+              <a href="">스몰비지니스</a>
+            </div>
+            <div class="partner_box">
+              <div class="title">Creators</div>
+              <a href="">크리에이터</a>
+              <a href="">스몰비지니스</a>
+            </div>
+          </div>
+          <div class="service"></div>
+        </div>
+        <div class="corp_area">
+          <h2 class="blind">네이버 정책</h2>
+          <ul>
+            <li><a href="">회사소개</a></li>
+            <li><a href="">인사채용</a></li>
+            <li><a href="">제휴제안</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">청소년보호정책</a></li>
+            <li><a href="">네이버정책</a></li>
+            <li><a href="">고객센터</a></li>
+          </ul>
+          <address>
+            <a href="https://www.navercorp.com/" target="_blank"
+              >@ NAVER Corp.</a
+            >
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

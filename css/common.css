@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* 넘치는거 잘랐어 */
+  clip: rect(0 0 0 0);
+  /* 특정구역만 보이게 하는건데, 0의 좌표를 보이게해서 아무것도 보이지 않음 */
+  margin: -1px;
+  /* 영역제외 */
+}
+
+header .logo,
+.sp_bg,
+.link_start::after,
+.link_junior,
+.link_bin,
+.group_title h2::before,
+.group_title h2::after,
+a.prev::before,
+a.next::before,
+.media::after,
+.info_area a::before,
+.link_all::after,
+.group_funding a::after,
+.group_more .btn i,
+.group_title .title::after,
+.group_title .title::before,
+a.prev i,
+a.next i {
+  background-image: url(../images/sp_bg.png);
+  background-size: 457px;
+}/*# sourceMappingURL=common.css.map */
