@@ -133,7 +133,7 @@ header .menu_area .gnb li {
 header .menu_area .gnb li + li {
   margin-left: 12px;
 }
-header .menu_area .gnb::after {
+header .menu_area .gnb li::after {
   content: "";
   clear: both;
   display: block;

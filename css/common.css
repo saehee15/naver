@@ -16,6 +16,10 @@ header .logo,
 .link_start::after,
 .link_junior,
 .link_bin,
+.link_id::before,
+.link_id::after,
+.link_join::before,
+.link_find::before,
 .group_title h2::before,
 .group_title h2::after,
 a.prev::before,
@@ -27,8 +31,18 @@ a.next::before,
 .group_more .btn i,
 .group_title .title::after,
 .group_title .title::before,
+.navi_box a.prev::before,
+.funding_wrap a i,
 a.prev i,
 a.next i {
   background-image: url(../images/sp_bg.png);
   background-size: 457px;
+}
+
+.sc_shopping .group_title h2::after,
+.sc_shopping .group_title h2::before,
+.navi_box a.prev::before,
+.navi_box a.next::before {
+  background-image: url(../images/sp_bg1.png);
+  background-size: 107px;
 }/*# sourceMappingURL=common.css.map */

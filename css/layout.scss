@@ -9,6 +9,7 @@ body {
   font-size: 12px;
   line-height: 16px;
 }
+
 header {
   .logo_area {
     width: $bs-width;
@@ -25,11 +26,13 @@ header {
     top: 50%;
     left: -9px;
     margin-top: -32px;
+
     a {
       display: block;
       height: 100%;
     }
   }
+
   .search_area {
     position: relative;
     width: 582px;
@@ -41,6 +44,7 @@ header {
     top: 50%;
     left: 268px;
     margin-top: -28px;
+
     .search_txt {
       outline: 0;
       border: 0;
@@ -52,6 +56,7 @@ header {
       padding: 13px 15px;
       box-sizing: border-box;
     }
+
     .search_btn {
       position: absolute;
       top: -2px;
@@ -61,6 +66,7 @@ header {
       background: $green;
       border: 0;
       padding: 0;
+
       i {
         display: inline-block;
         width: 22px;
@@ -70,13 +76,16 @@ header {
       }
     }
   }
+
   .quick_area {
     position: absolute;
     top: 12px;
     right: 27px;
+
     a {
       float: left;
       font-size: 11px;
+
       &.link_start {
         &::after {
           content: "";
@@ -88,6 +97,7 @@ header {
           margin: -3px 0 0 3px;
         }
       }
+
       &.link_junior {
         display: inline-block;
         width: 60px;
@@ -97,6 +107,7 @@ header {
         vertical-align: top;
         margin: 3px;
       }
+
       &.link_bin {
         display: inline-block;
         width: 34px;
@@ -107,6 +118,7 @@ header {
         margin: 3px 3px 2px;
       }
     }
+
     .bar {
       float: left;
       width: 1px;
@@ -119,6 +131,7 @@ header {
   .menu_area {
     border-top: 1px solid #e4e8eb;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+
     .wrap {
       width: $bs-width;
       margin: 0 auto;
@@ -129,27 +142,29 @@ header {
         display: block;
       }
     }
+
     .gnb {
       float: left;
       color: $green;
       font-size: 15px;
       font-weight: bold;
       line-height: 52px;
+
       li {
         float: left;
-        a {
-        }
-        & + li {
+
+        &+li {
           margin-left: 12px;
         }
-      }
-      &::after {
-        content: "";
-        clear: both;
-        display: block;
+
+        &::after {
+          content: "";
+          clear: both;
+          display: block;
+        }
       }
     }
-    .weather_area {
+    .weather_area{
       float: right;
     }
   }
@@ -159,10 +174,14 @@ main {
   width: $bs-width;
   margin: 0 auto;
   padding: 20px 30px;
+
   &::after {
-    content: ""; /* 빈칸생성 */
-    display: block; /* 빈칸이 인라인이라 블럭처리 */
-    clear: both; /* 양쪽해제 */
+    content: "";
+    /* 빈칸생성 */
+    display: block;
+    /* 빈칸이 인라인이라 블럭처리 */
+    clear: both;
+    /* 양쪽해제 */
   }
 }
 
